@@ -20,13 +20,14 @@ end
   #  expect{age_appropriate_birthday(birthday_kids)}.to output("Happy Birthday Timmy! You are now 9 years old!\nHappy Birthday Sarah! You are now 6 years old!\nYou are too old for this.\n").to_stdout
   
   def age_appropriate_birthday(birthday_kids)
-    appropriate= ""
     birthday_kids.each do |name,age|
       if age <=12
         puts "Happy Birthday #{name}! You are now #{age} years old!"
       else
         puts "You are too old for this."
       end
+    end
+  end
       
       
     
